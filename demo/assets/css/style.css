@@ -2092,7 +2092,7 @@ textarea.style2 {
   margin: 8px 0 0;
   font-size: 16px;
   text-align: center;
-  color: #ffefc2;
+  color: #fff;
   font-style: italic;
   line-height: 1.4;
 }
@@ -2846,8 +2846,8 @@ textarea.is-invalid {
     border: none;
     font-size: 22px;
     position: absolute;
-    right: -16.5px;
-    top: 25px;
+    right: -1.5px;
+    top: 2px;
     padding: 0;
     line-height: 1;
     width: 33px;
@@ -27917,6 +27917,7 @@ span.select2-selection.select2-selection--single:focus {
     position: relative;
     border: 10px solid white;
    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+   overflow: hidden;
 }
 
 .campus-card.style2 .box-thumb img {
@@ -31748,6 +31749,64 @@ span.select2-selection.select2-selection--single:focus {
 .custom-table .col:not(.days) {
     width: 37.5%;
 }
+@media (max-width: 450px) {
+
+    /* text chhota */
+    .house-col {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .house-head .house-col {
+        font-size: 14px;
+    }
+
+    /* custom table */
+    .custom-table .col {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    /* overflow fix */
+    .custom-table {
+        overflow-x: hidden;
+    }
+}
+/* ===== 350px FIX ===== */
+@media (max-width: 350px) {
+
+    /* text wrap */
+    .house-col,
+    .custom-table .col {
+        font-size: 12px;
+        padding: 8px;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .house-head .house-col {
+        font-size: 13px;
+    }
+
+    /* ensure columns shrink */
+    .house-col {
+        width: 50%;
+        min-width: 0; /* IMPORTANT */
+    }
+
+    .custom-table .row {
+        display: flex;
+    }
+
+    .custom-table .col {
+        min-width: 0; /* prevents overflow */
+    }
+
+    /* prevent page scroll */
+    body {
+        overflow-x: hidden;
+    }
+}
 
 
 
@@ -31874,7 +31933,26 @@ span.select2-selection.select2-selection--single:focus {
     }
 }
 
+@media (max-width: 0px) {
 
+    .aff-left,
+    .aff-right {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .campus-main-title {
+        font-size: 20px;
+    }
+
+    .campus-info-box {
+        padding: 15px;
+    }
+
+    .campus-info-box ul li {
+        font-size: 12px;
+    }
+}
 
 
 
