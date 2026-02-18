@@ -2975,7 +2975,7 @@ textarea.is-invalid {
 }
 
 .th-mobile-menu ul .th-item-has-children>a:after {
-    content: "\f067";
+    /* content: "\f067"; */
     font-family: var(--icon-font);
     width: 22px;
     height: 22px;
@@ -2993,9 +2993,9 @@ textarea.is-invalid {
     content: '\f068'
 }
 
-.th-mobile-menu ul .th-item-has-children.th-active>a:after {
+/* .th-mobile-menu ul .th-item-has-children.th-active>a:after {
     content: "\f068"
-}
+} */
 
 .th-mobile-menu>ul {
     padding: 0 40px

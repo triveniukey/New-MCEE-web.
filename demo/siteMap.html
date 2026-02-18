@@ -55,10 +55,7 @@
     transition: 0.3s;
 }
 
-/* rotate when open */
-.menu-item-has-children.active .menu-toggle {
-    transform: rotate(180deg);
-}
+
 
 /* hide submenu */
 .th-mobile-menu .sub-menu {
@@ -69,6 +66,15 @@
 /* show submenu */
 .menu-item-has-children.active > .sub-menu {
     display: block;
+}
+/* Desktop header ke menu se + sign ko bilkul hata do */
+.main-menu .menu-item-has-children > a .menu-toggle {
+    display: none !important;
+}
+
+/* Mobile menu mein + abhi bhi dikhega (safety ke liye) */
+.th-mobile-menu .menu-item-has-children > a .menu-toggle {
+    display: inline-block !important;
 }
 </style>
 </head>
