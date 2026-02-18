@@ -32433,3 +32433,10 @@ input[type="file"].form-control {
 .table-responsive {
     overflow-x: auto;
 }
+@media (max-width: 768px) {
+  .th-hero-wrapper {
+    /* height: 100vh; */
+    background-size: 100% 100%;
+    background-position: center;
+  }
+}
